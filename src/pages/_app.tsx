@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={client}>
-        <RainbowKitProvider initialChain={bscTestnet.id}>
+        <RainbowKitProvider initialChain={bscTestnet.id} modalSize='compact'>
           <Component {...pageProps} />
         </RainbowKitProvider>
       </QueryClientProvider>
